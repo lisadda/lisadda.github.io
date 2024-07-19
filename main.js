@@ -11,7 +11,7 @@ const typeWriter = setInterval(() => {
   if (index > text.length - 1) {
     clearInterval(typeWriter);
   }
-}, 90);
+}, 170);
 
 // Cursor tracker //
 document.addEventListener("mousemove", function (e) {
