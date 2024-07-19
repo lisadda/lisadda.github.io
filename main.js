@@ -13,7 +13,7 @@ const typeWriter = setInterval(() => {
   }
 }, 90);
 
-/* Cursor tracker */
+// Cursor tracker //
 document.addEventListener("mousemove", function (e) {
   const tracker = document.getElementById("cursor-tracker");
   const trackerSize = tracker.offsetWidth / 2;
@@ -21,11 +21,17 @@ document.addEventListener("mousemove", function (e) {
     e.clientY - trackerSize
   }px)`;
 });
-/* Cursor tracker */
+// Cursor tracker //
 
-/* menu burger et dark mode */
+// $(".cards").on("click", function () {
+//   $(".card1").toggleClass("flipped");
+// });
+
+//openmenu et dark mode//
 // var element = document.getElementById("navlink");
 // var darky = document.getElementById("container");
+
+// element.addEventListener('click',openmenu) je ne le mets pas car j'ai deja mon onclick sur html
 
 // function openmenu() {
 //   element.classList.toggle("open");
@@ -34,16 +40,4 @@ document.addEventListener("mousemove", function (e) {
 // function opendark() {
 //   darky.classList.toggle("darkmode");
 // }
-
-// Typewriting effect
-
-// hoverbutton effect
-// let btn = document.querySelector(".mouse-cursor-gradient-tracking");
-// btn.addEventListener("mousemove", (e) => {
-//   let rect = e.target.getBoundingClientRect();
-//   let x = e.clientX - rect.left;
-//   let y = e.clientY - rect.top;
-//   btn.style.setProperty("--x", x + "px");
-//   btn.style.setProperty("--y", y + "px");
-// });
-// hoverbutton effect
+//openmenu et dark mode//

@@ -22,6 +22,7 @@ body {
   top: 50%;
   margin-top: -14.5454545455%;
 }
+
 .medium div {
   position: absolute;
   width: 9.0909%;
@@ -256,7 +257,7 @@ body {
 #cursor-tracker {
   width: 30px;
   height: 30px;
-  background-color: rgba(215, 143, 143, 0.728); /* Couleur du tracker */
+  background-color: rgba(122, 114, 114, 0.728); /* Couleur du tracker */
   border-radius: 50%; /* Forme circulaire */
   pointer-events: none; /* Ignore les événements de la souris */
   transition: transform 0.1s ease; /* Pour un effet de suivi plus fluide */
@@ -265,6 +266,7 @@ body {
 
 .container {
   width: 1500px;
+  height: 1000px;
   margin: 0 auto;
   background-color: rgb(255, 225, 209);
 }
@@ -284,7 +286,7 @@ nav {
   padding: 30px;
 }
 
-.menu {
+.menu1 {
   width: 100%;
   height: 10px;
   display: flex;
@@ -294,10 +296,42 @@ nav {
   position: fixed;
 }
 
+.buttonmenu {
+  background-color: transparent;
+  width: 1rem;
+  height: 2rem;
+  border: none;
+  box-shadow: none;
+}
+
+#navlink {
+  width: 20rem;
+  height: 65rem;
+  background-color: rgb(255, 225, 209);
+  position: absolute;
+  right: -600px;
+}
+
 .open {
   right: 0 !important;
   transition: 2s;
 }
+
+.darkmode {
+  width: 50%;
+  height: 50vh;
+  background-color: rgb(56, 33, 33);
+}
+
+.darkmode #image {
+  display: none !important;
+}
+
+/* 
+.open {
+  right: 0 !important;
+  transition: 2s;
+} */
 
 /* .darkmode {
   width: 50%;
@@ -473,10 +507,141 @@ button:hover {
 .reseaux {
   display: flex;
   gap: 10px;
+  justify-content: space-around;
 }
 
 svg:hover {
   fill: rgb(196, 129, 129);
   transition: 1s;
   cursor: pointer;
+}
+
+.formation {
+  width: 93rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 8rem;
+}
+
+.title1 {
+  width: 60rem;
+  height: 10rem;
+  padding-left: 11rem;
+}
+
+#descodeuses1 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+#descodeuses2,
+#descodeuses3 {
+  font-weight: 350;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.formation1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.titre1 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 50px;
+  letter-spacing: 6px;
+  font-size: 44px;
+  text-shadow: -4px 0px 0px black;
+  color: rgb(118, 45, 71);
+  font-weight: 350;
+}
+
+/* -webkit-animation: titre1 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: titre1 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
+
+/* @-webkit-keyframes titre1 {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes titre1 {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+} */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 330px;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: rgba(255, 255, 255, 0.272);
+  border-radius: 10px;
+  border: solid 1px white;
+  padding: 10px;
+}
+
+.flip-card-back {
+  background-color: rgb(215 143 143);
+  color: #f4e8e8;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+li,
+ul {
+  font-weight: 350;
+  font-size: 50px;
+  color: aliceblue;
 }
