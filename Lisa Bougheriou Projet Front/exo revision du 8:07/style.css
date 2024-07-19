@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 1680px;
+    height: auto;
+    background-color: rgb(255, 209, 194);
+}
+
+article{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./Malaga-en-Espagne.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1{
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size:xx-large;
+    margin-right: 500px;
+    color: rgb(64, 46, 13);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.titre{
+    font-family:"Josefin Sans", sans-serif;
+    font-style: italic;
+    font-size:x-large;
+    color: rgb(64, 46, 13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+figure{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr ;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card p{
+    font-family:"Josefin Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: larger;
+    font-style: bold;
+}
+
+#port{
+   background-image: url("./d4e308a0a4d56fd0d4d27680f7f24e6b.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#plage{
+    background-image: url("./malagueta-beach-malaga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ #town{
+    background-image: url("./57488-Malaga-Old-Town.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .card:hover{
+    cursor: pointer;
+    border: solid blanchedalmond;
+ }
+
+ footer{
+    background-color: rgb(225, 169, 151);
+    font-family:"Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    padding: 30px;
+    font-size: 20px;
+    color: rgb(64, 46, 13);
+ }
+
+ html{
+    scroll-behavior: smooth ;
+ }
+
+ .scroll{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 15px;
+
+ }
+ .scroll img{
+    width: 40px;
+ }
+
+ @media screen and (max-width:767px){
+
+    figure{ 
+        flex-direction: column;
+    }
+
+    article{
+        background-position: center;
+    }
+
+
+ }

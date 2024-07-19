@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "great";
+    src: url("./Bondist.ttf");
+}
+
+*{
+    margin: 0;
+}
+
+h1 {
+    font-family: great
+
+}
+
+.police {
+font-family:great;
+font-weight: bold;
+font-size: 32px;
+text-transform: uppercase;
+text-align: center;
+padding: 40px;
+}
+
+#bleu {
+    color: white;
+    background-color: rgb(69, 69, 231);
+margin: 0 auto;
+
+}
+
+#rouge {
+    color: white ;
+    background-color: rg(234, 45, 45);
+}
+
+
+#jaune {
+    color: white;
+    background-color: rgb(237, 243, 81);
+  
+}
+
+#rose {
+    color: white;
+    background-color:  rgb(245, 97, 144)
+}
+
+.fond {
+  
+    background-color: rgb(207, 206, 206);
+    background-size: cover;
+    width: 600px;
+margin: 0 auto;
+
+}
+
+body{
+    background-color: rgb(207, 206, 206);
+}

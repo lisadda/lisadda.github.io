@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    height: 12%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu{
+    width: 40%;
+    height: 12%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Barlow", sans-serif;
+}
+
+.logo{
+    padding-left: 40px;
+}
+
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.contct:hover{
+    width: 70px;
+    height: 30px;
+    /* background-color: rgba(72, 217, 239, 0.334); */
+    border-radius: 10px;
+    font-family: "Fraunces", serif;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+header{
+    font-family: "Fraunces", serif;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.arrow {
+    margin-top: 170px;
+}
+
+article{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+}
+
+.texte{
+    width: 50%;
+    height: 100%;
+    font-family: "Fraunces", serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texteun{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texteun h4{
+    padding-right: 255px;
+    position: relative;
+    cursor: pointer;
+    color: hsl(212, 27%, 19%);
+}
+
+.texteun h4::after{
+    text-decoration: underline 10px;
+    position: absolute;
+    content: '';
+    width: 95px;
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 221, 0, 0.602);
+    border-radius: 20px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.7s ease-in-out;
+}
+
+.texteun h4:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.textedeux{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.textedeux h4{
+    padding-right: 255px;
+    position: relative;
+    cursor: pointer;
+    color: hsl(212, 27%, 19%);
+}
+
+.textedeux h4::after{
+    text-decoration: underline 10px;
+    position: absolute;
+    content: '';
+    width: 95px;
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(7, 99%, 70%, 0.602);
+    border-radius: 20px;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.7s ease-in-out;
+}
+
+.textedeux h4:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+* p{
+    font-family: "Barlow", sans-serif;
+}
+
+.texte p {
+    color: hsl(232, 10%, 55%);
+}
+
+.texte h2{
+    color: hsl(212, 27%, 19%);
+    font-size: xx-large;
+}
+
+#transform p{
+padding-right: 60px;
+text-orientation:sideways;
+}
+
+#oeuf{
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#verre{
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#transform h2{
+    font: 700;
+    display: flex;
+}
+
+.textetrois, .textefour{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 300px;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+.textetrois p, .textefour p {
+    color: hsl(167, 40%, 24%);
+}
+
+.textetrois h3, .textefour h3 {
+font-size: x-large;
+font-weight: 700;
+}
+
+#cerise{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#orange{
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.avis{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titre{
+    width: 33.3%;
+    color: hsl(231, 10%, 72%);
+    letter-spacing: 5px;
+    font-family: "Fraunces", serif;
+    text-align: center;
+    padding: 50px;
+    padding-top: 150px;
+}
+
+.testimonial{
+    display: flex;
+    padding-bottom: 75px;
+}
+
+#bloc{
+    width: 33.3%;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#bloc h3{
+    font-family: "Fraunces", serif;
+    color: hsl(212, 27%, 19%);
+}
+
+#job {
+    color: hsl(231, 10%, 72%);
+}
+
+#para{
+    color: hsl(212, 6%, 47%);
+}
+
+
+.photoun, .photodeux, .phototrois{
+    width: 50px;
+    height: 50px;
+    border: solid black;
+    border-radius: 50px;
+}
+
+.photoun{
+    background-image: url("./images/image-emily.jpg");
+    background-size: contain;
+    border-color: aliceblue;
+}
+
+.photodeux{
+    background-image: url("./images/image-thomas.jpg");
+    background-size: contain;
+    border-color: aliceblue;
+}
+
+.phototrois{
+    background-image: url("./images/image-jennie.jpg");
+    background-size: contain;
+    border-color: aliceblue;
+}
+
+.fin {
+    width: 100%;
+    height: 416px;
+    grid-row-gap: 16px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+
+#pic1{
+    width:100%;
+    height:100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+    background-size: cover;
+}
+
+#pic2{
+    width:100%;
+    height:100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+    background-size: cover;
+}
+
+#pic3{
+    width:100%;
+    height:100%;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+    background-size: cover;
+}
+
+#pic4{
+    width:100%;
+    height:100%;
+    min-height:200px;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(127, 201, 191);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu2{
+    display: flex;
+    gap: 40px;
+}
+
+.menu2 p{
+    color: hsl(168, 30%, 29%);
+}
+
+.menu2 p:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.reseaux{
+    display: flex;
+    gap: 40px;
+}
+
+.reseaux a:hover{
+    color: aliceblue;
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 767px){
+    
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(204, 108, 52), rgb(220, 70, 95));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -2;
+
+}
+
+.glass{
+    width: 450px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.442);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: solid rgba(255, 255, 255, 0.393);
+    position: relative;
+} 
+
+.card{
+    width: 450px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+    /* backdrop-filter: blur(5px); */
+}
+/* filter{
+    filter: blur(3.5px);
+} */
+
+.rond{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#bleu{
+    background: linear-gradient(to top, rgb(109, 193, 242), rgb(139, 50, 187));
+    position: absolute;
+    top: -80px;
+    left: -70px;
+}
+
+#jaune{
+    background: linear-gradient(to top, rgb(208, 53, 153), rgb(210, 220, 70));
+    position: absolute;
+    bottom: -80px;
+    right: -70px;
+ 
+}
+
+h2, p, h3{
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.logo{
+    position: absolute;
+    top:-10px ;
+}
+
+h3

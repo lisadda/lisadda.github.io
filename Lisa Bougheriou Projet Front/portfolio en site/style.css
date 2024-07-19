@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(245, 189, 182);
+}
+
+.rond{
+width: 100px;
+height: 100px;
+background-color: rgb(252, 219, 227);
+border-radius : 50px
+
+}
+

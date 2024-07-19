@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+.carre {
+    width: 200px;
+    height: 200px;
+}
+
+#couleurun {
+    background-color: indigo;
+}
+
+#couleurdeux {
+    background-color: blue;
+}
+
+p {
+    width: 30px;
+    color: orange;
+}
