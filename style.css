@@ -16,9 +16,9 @@ body {
 }
 .medium {
   position: absolute;
-  width: 40%;
-  left: 50%;
-  left: 55%;
+  width: 25%;
+  left: 10%;
+  left: 60%;
   top: 50%;
   margin-top: -14.5454545455%;
 }
@@ -245,7 +245,7 @@ body {
 @keyframes Kawin {
   from {
     margin-left: 20%;
-    width: 2%;
+    width: 7%;
   }
   to {
     margin-left: 0%;
@@ -261,8 +261,7 @@ body {
   border-radius: 50%; /* Forme circulaire */
   pointer-events: none; /* Ignore les événements de la souris */
   transition: transform 0.1s ease; /* Pour un effet de suivi plus fluide */
-}
-/* Cursor tracker */
+} /* Cursor tracker */
 
 .container {
   width: 1500px;
@@ -307,7 +306,7 @@ nav {
   box-shadow: none;
 }
 
-#navlink {
+/* #navlink {
   width: 20rem;
   height: 65rem;
   background-color: rgb(255, 225, 209);
@@ -328,10 +327,9 @@ nav {
 
 .darkmode #image {
   display: none !important;
-}
+} */
 
-/* 
-.open {
+/* .open {
   right: 0 !important;
   transition: 2s;
 } */
@@ -345,7 +343,7 @@ nav {
 header {
   width: 50%;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 header h2 {
@@ -359,11 +357,7 @@ h1 {
   letter-spacing: 9px;
   font-size: 127px;
   color: rgb(118, 45, 71);
-}
-
-/* pour faire lanimation du shadow */
-h1 {
-  animation: h1 3s both;
+  animation: h1 3s both; /* pour faire lanimation du shadow */
 }
 
 @keyframes h1 {
@@ -396,6 +390,7 @@ header p {
   font-size: 22px;
 }
 
+/* bouton mon CV */
 button {
   width: 13rem;
   height: 4rem;
@@ -406,7 +401,7 @@ button {
   font-size: 17px;
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.168);
   -webkit-animation: button 1.5s ease-in-out 5 both; /* animation bounce button */
-  animation: button 1.5s ease-in-out 5 both;
+  animation: button 1.5s ease-in-out 5 both; /* animation bounce button */
 }
 
 /* animation bounce button */
@@ -489,7 +484,7 @@ button:hover {
   left: 0;
   top: 0;
 }
-/* animation bounce button */
+/* animation bounce button + color */
 
 .infos {
   width: 80rem;
@@ -501,75 +496,43 @@ button:hover {
   padding-left: 50px;
 }
 
+/* ligne entre button cv et reseaux */
 .line {
   width: 10rem;
   height: 2px;
   background-color: rgb(0, 0, 0);
 }
 
+/* div du button cv et reseaux */
 .reseaux {
   display: flex;
   gap: 10px;
   justify-content: space-around;
 }
 
+/* hover pour les icones reseaux */
 svg:hover {
   fill: rgb(196, 129, 129);
   transition: 1s;
   cursor: pointer;
 }
 
+/* article qui comprends ttes les cards */
 .formation {
   width: 93rem;
-  height: 100rem;
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 6rem 10rem;
   align-items: center;
-  padding-left: 10px;
-  margin-top: 14rem;
+  margin-top: 12rem;
+  justify-content: center;
 }
 
+/* titre de l'article formations et experiences. */
 .title1 {
-  width: 60rem;
-  height: 10rem;
-  padding-left: 12rem;
-}
-
-#descodeuses1,
-#descodeuses2 {
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  padding: 10px;
-}
-
-/* #descodeuses1 {
-  padding-top: -10px;
-} */
-
-#descodeuses3,
-#descodeuses4 {
-  font-weight: 350;
-  font-size: 23px;
-  color: rgb(0, 0, 0);
-  padding: 25px;
-}
-
-#descodeuses3 {
-  color: rgb(118, 45, 71);
-  font-weight: 450;
-}
-
-.formation1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.formation1,
-.formation2 p {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 22px;
+  width: 100rem;
+  height: 5rem;
+  text-align: center;
 }
 
 .titre1 {
@@ -581,41 +544,65 @@ svg:hover {
   color: rgb(184 101 122);
   font-weight: 350;
 }
+/* titre de l'article formations et experiences. */
 
-/* -webkit-animation: titre1 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: titre1 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
-
-/* @-webkit-keyframes titre1 {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
+/* titre front card. */
+#descodeuses1 {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 10px;
 }
-@keyframes titre1 {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-} */
 
+#descodeuses1 {
+  padding-top: -10px;
+}
+
+#descodeuses2 {
+  font-size: 25px;
+  color: rgb(165, 71, 104) !important;
+  font-weight: 500;
+  padding: 10px;
+}
+
+#descodeuses3 {
+  font-weight: 450;
+  font-size: 23px;
+  color: black !important;
+  padding: 25px;
+}
+
+#descodeuses4 {
+  font-weight: 450;
+  font-size: 23px;
+  color: rgb(165, 71, 104);
+  padding: 25px;
+}
+/* titre front card. */
+
+/* dispo et police front card. */
+.formation1,
+.formation2,
+.formation3,
+.formation4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.formation1,
+.formation2,
+.formation3,
+.formation4 p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 22px;
+}
+/* dispo et police front card. */
+
+/* 1er card */
 .flip-card {
   background-color: transparent;
   width: 400px;
-  height: 350px;
+  height: 333px;
   perspective: 1000px;
   border-radius: 10px;
   grid-column: 1/3;
@@ -652,13 +639,13 @@ svg:hover {
   min-height: 200px;
   grid-column: 1/3;
   grid-row: 1/2;
+  border: solid 1px black;
 }
 
 .flip-card-front {
   background-color: rgba(255, 255, 255, 0.272);
   border-radius: 10px;
-  border: solid 1px white;
-  padding: 21px;
+  padding: 13px;
 }
 
 .flip-card-back {
@@ -669,23 +656,13 @@ svg:hover {
   flex-direction: column;
   gap: 10px;
 }
+/* 1er card */
 
-li,
-ul {
-  font-weight: 400;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-family: "Barlow Semi Condensed", sans-serif;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-
+/* 2eme card */
 .flip-card2 {
   background-color: transparent;
   width: 400px;
-  height: 350px;
+  height: 333px;
   perspective: 1000px;
   border-radius: 10px;
   min-height: 200px;
@@ -720,13 +697,14 @@ ul {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
+  border: solid 1px black;
 }
 
 .flip-card-front2 {
   background-color: rgba(255, 255, 255, 0.272);
   border-radius: 10px;
-  border: solid 1px white;
-  padding: 21px;
+  border: solid 1px black;
+  padding: 13px;
 }
 
 .flip-card-back2 {
@@ -737,11 +715,13 @@ ul {
   flex-direction: column;
   gap: 10px;
 }
+/* 2eme card */
 
+/* 3eme card */
 .flip-card3 {
   background-color: transparent;
   width: 400px;
-  height: 350px;
+  height: 333px;
   perspective: 1000px;
   border-radius: 10px;
   min-height: 200px;
@@ -776,13 +756,14 @@ ul {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
+  border: solid 1px black;
 }
 
 .flip-card-front3 {
   background-color: rgba(255, 255, 255, 0.272);
   border-radius: 10px;
-  border: solid 1px white;
-  padding: 21px;
+  border: solid 1px black;
+  padding: 13px;
 }
 
 .flip-card-back3 {
@@ -792,6 +773,118 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+/* 3eme card */
+
+/* 4eme card */
+.flip-card4 {
+  background-color: transparent;
+  width: 400px;
+  height: 333px;
+  perspective: 1000px;
+  border-radius: 10px;
+  min-height: 200px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.flip-card-inner4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.flip-card4:hover .flip-card-inner4 {
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.flip-card-front4,
+.flip-card-back4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+
+.flip-card-front4 {
+  background-color: rgba(255, 255, 255, 0.272);
+  border-radius: 10px;
+  border: solid 1px black;
+  padding: 13px;
+}
+
+.flip-card-back4 {
+  background-color: rgb(141 69 87 / 68%);
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* 4eme card */
+
+/* Liste pour ttes les cards */
+li,
+ul {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+/* Liste pour ttes les cards */
+
+/* design des Liste des cards */
+.flip-card-back li,
+ul {
+  padding-top: 13px;
+}
+
+.flip-card-back2 li,
+ul {
+  padding-top: 17px;
+}
+
+.flip-card-back3 li,
+ul {
+  padding-top: 15px;
+}
+
+.flip-card-back4 li,
+ul {
+  padding-top: 14px;
+}
+/* design des Liste descards */
+
+.title2 {
+  width: 100rem;
+  height: 5rem;
+  text-align: center;
+}
+
+.titre2 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 50px;
+  letter-spacing: 6px;
+  font-size: 44px;
+  text-shadow: -4px 0px 0px black;
+  color: rgb(184 101 122);
+  font-weight: 350;
 }
 
 /* .grid {
