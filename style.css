@@ -395,13 +395,14 @@ button {
   width: 13rem;
   height: 4rem;
   border-radius: 20px;
-  background-color: rgb(255, 225, 209);
+  background-color: rgba(215, 143, 143, 0.41);
   color: black;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 17px;
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.168);
   -webkit-animation: button 1.5s ease-in-out 5 both; /* animation bounce button */
   animation: button 1.5s ease-in-out 5 both; /* animation bounce button */
+  transition: background-color 1s;
 }
 
 /* animation bounce button */
@@ -485,6 +486,13 @@ button:hover {
   top: 0;
 }
 /* animation bounce button + color */
+
+/*transition smooth du background color*/
+.button:focus,
+.button:active {
+  background-color: black;
+  transition: none;
+}
 
 .infos {
   width: 80rem;
