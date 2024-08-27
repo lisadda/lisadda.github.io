@@ -346,22 +346,14 @@ body {
   background-color: rgb(255, 225, 209);
 }
 
-/* .line-left {
-    position: absolute;
-    left: -200px;
-    width: 630px;
-    height: 1px;
-    background-color: #000000;
-    transform: rotate(90deg);
-  } */
-
-
+/* Nom etc */
 .header2 {
   width: 50%;
   padding-left: 50px;
   padding-top: 100px;
 }
 
+/* burger */
 .burger-menu {
   position: absolute;
   top: 15px;
@@ -412,6 +404,43 @@ body {
   /* Une couleur proche de l'accent sur "Accueil" */
 }
 
+/* body.menu-open #burgerMenu,
+body.menu-open #moon-icon {
+  display: none;
+} */
+
+
+/* Lorsque le menu est ouvert */
+.menu-open #moon-icon,
+.menu-open #burgerMenu {
+  display: none;
+  opacity: 0;
+}
+
+#moon-icon,
+#burgerMenu {
+  display: block;
+  transition: 0.50s ease-in-out;
+}
+
+
+.nav {
+  display: none;
+  /* Menu caché par défaut */
+  transform: translateY(-10px);
+  /* Légère translation pour un effet de glissement */
+  transition: 0.50s ease-in-out;
+}
+
+.nav.open {
+  display: block;
+  /* Menu affiché quand il est ouvert */
+  opacity: 1;
+  transform: translateY(0);
+  /* Retour à la position initiale */
+}
+
+
 .close {
   position: absolute;
   top: 15px;
@@ -454,40 +483,6 @@ nav {
   border: none;
   box-shadow: none;
 }
-
-/* #navlink {
-    width: 20rem;
-    height: 65rem;
-    background-color: rgb(255, 225, 209);
-    position: absolute;
-    right: -600px;
-  }
-  
-  .open {
-    right: 0 !important;
-    transition: 2s;
-  }
-  
-  .darkmode {
-    width: 50%;
-    height: 50vh;
-    background-color: rgb(56, 33, 33);
-  }
-  
-  .darkmode #image {
-    display: none !important;
-  } */
-
-/* .open {
-    right: 0 !important;
-    transition: 2s;
-  } */
-
-/* .darkmode {
-    width: 50%;
-    height: 50vh;
-    background-color: #230f03;
-  } */
 
 header {
   position: relative;
