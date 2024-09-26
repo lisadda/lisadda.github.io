@@ -16,27 +16,14 @@ const typeWriter = setInterval(() => {
 // Cursor tracker //
 document.addEventListener("mousemove", function (e) {
   const tracker = document.getElementById("cursor-tracker");
-  const trackerSize = tracker.offsetWidth / 2;
-  tracker.style.transform = `translate(${e.clientX - trackerSize}px, ${e.clientY - trackerSize
-    }px)`;
+  if (tracker) {
+    const trackerSize = tracker.offsetWidth / 2;
+    tracker.style.transform = `translate(${e.clientX - trackerSize}px, ${e.clientY - trackerSize}px)`;
+  }
 });
 
+
 // Menu Burger //
-// document.getElementById('burgerMenu').addEventListener('click', function () {
-//   document.getElementById('navMenu').classList.add('open');
-// });
-
-// document.getElementById('closeBtn').addEventListener('click', function () {
-//   document.getElementById('navMenu').classList.remove('open');
-// });
-
-// const menuButton = document.getElementById('burgerMenu');
-// const body = document.body;
-
-// menuButton.addEventListener('click', () => {
-//   body.classList.toggle('navMenu');
-// });
-
 const burgerMenu = document.getElementById('burgerMenu');
 const closeBtn = document.getElementById('closeBtn');
 const navMenu = document.getElementById('navMenu');
@@ -44,13 +31,15 @@ const body = document.body;
 
 burgerMenu.addEventListener('click', () => {
   navMenu.classList.add('open');
-  body.classList.add('menu-open');  // Ajoute la classe au body
+  body.classList.add('menu-open'); // Désactiver le scrolling du body
 });
 
 closeBtn.addEventListener('click', () => {
   navMenu.classList.remove('open');
-  body.classList.remove('menu-open');  // Retire la classe du body
+  body.classList.remove('menu-open'); // Réactiver le scrolling du body
 });
+
+
 
 
 

@@ -36,10 +36,10 @@ body {
 
 .medium {
   position: absolute;
-  width: 25%;
+  width: 30%;
   left: 10%;
   left: 60%;
-  top: 50%;
+  top: 52%;
   margin-top: -14.5454545455%;
 }
 
@@ -327,15 +327,20 @@ body {
 #cursor-tracker {
   width: 30px;
   height: 30px;
-  background-color: rgba(122, 114, 114, 0.728);
+  background-color: rgba(170, 112, 112, 0.728);
   /* Couleur du tracker */
   border-radius: 50%;
   /* Forme circulaire */
   pointer-events: none;
   /* Ignore les événements de la souris */
+  position: fixed;
+  /* Positionné par rapport à la fenêtre */
   transition: transform 0.1s ease;
-  /* Pour un effet de suivi plus fluide */
+  /* Suivi plus fluide */
+  z-index: 9999;
+  /* Toujours au-dessus des autres éléments */
 }
+
 
 /* Cursor tracker */
 
@@ -356,7 +361,7 @@ body {
 /* burger */
 .burger-menu {
   position: absolute;
-  top: 15px;
+  top: 30fpx;
   right: -1px;
   cursor: pointer;
   z-index: 1000;
@@ -378,7 +383,6 @@ body {
   height: 100%;
   background-color: rgb(255, 225, 209);
   padding-top: 60px;
-  transition: right 0.6s ease;
 }
 
 .nav ul {
@@ -497,13 +501,13 @@ header h2 {
 .header-content {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
 }
 
 .icon-container svg {
   margin-right: 15px;
   position: absolute;
-  top: -16px;
+  top: -2px;
   right: 70px;
   cursor: pointer;
   z-index: 1000;
@@ -549,7 +553,7 @@ h3 {
 
 header p {
   font-family: "Barlow Semi Condensed", sans-serif;
-  padding-top: 2rem;
+  padding-top: 4rem;
   font-size: 22px;
 }
 
@@ -673,7 +677,7 @@ button:hover {
 .infos {
   width: 80rem;
   height: 6rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -699,6 +703,7 @@ svg:hover {
   fill: rgb(196, 129, 129);
   transition: 1s;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* article qui comprends ttes les cards */
@@ -706,7 +711,7 @@ svg:hover {
   width: 93rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem 10rem;
+  gap: 4rem 10rem;
   align-items: center;
   margin-top: 15rem;
   justify-content: center;
@@ -1078,6 +1083,7 @@ ul {
   text-shadow: -4px 0px 0px black;
   color: rgb(184 101 122);
   font-weight: 350;
+  padding-top: 60px;
 }
 
 /* .grid {
@@ -1090,3 +1096,88 @@ ul {
     display: flex;
     justify-content: center;
   } */
+
+
+/*carroussel*/
+.competences {
+  /* height: 35vh; */
+  width: 100%;
+  background-color: var(--noir);
+  display: flex;
+  justify-content: center;
+  /* Centre le carrousel horizontalement */
+  align-items: center;
+  /* Centre le carrousel verticalement */
+}
+
+.carrousel {
+  height: 200px;
+  /* Ajusté à la hauteur des images */
+  width: 60%;
+  overflow: hidden;
+  background-color: var(--noir);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrousel .automatique {
+  display: flex;
+  gap: 80px;
+  width: calc(200px * 40);
+  /* Double du nombre d'images pour permettre la boucle */
+  animation: scroll 20s linear infinite;
+}
+
+.carrousel img {
+  object-fit: contain;
+  height: 90px;
+  width: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*carroussel*/
+
+.aboutme {
+  width: 93rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 10rem;
+  align-items: center;
+  margin-top: 15rem;
+  justify-content: center;
+}
+
+.autonomy,
+.listening,
+.calm,
+.language {
+  width: 400px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 450;
+  color: black !important;
+  text-align: center;
+  padding: 20px;
+}
+
+#autonomytitle,
+#listeningtitle,
+#calmtitle,
+#languagetitle {
+
+  font-size: 25px;
+  color: rgb(165, 71, 104);
+  font-weight: 500;
+  padding: 10px;
+
+}
